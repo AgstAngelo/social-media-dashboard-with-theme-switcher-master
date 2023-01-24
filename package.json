@@ -1,0 +1,23 @@
+{
+  "name": "social-media-dashboard-with-theme-switcher-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./src/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgstAngelo/social-media-dashboard-with-theme-switcher-master.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgstAngelo/social-media-dashboard-with-theme-switcher-master/issues"
+  },
+  "homepage": "https://github.com/AgstAngelo/social-media-dashboard-with-theme-switcher-master#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
