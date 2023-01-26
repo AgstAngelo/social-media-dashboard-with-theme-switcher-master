@@ -6,10 +6,11 @@ module.exports = {
       colors: {
         //light theme - BG is pure white
         "light-theme": "hsl(230, 22%, 74%)",
-        "Very-Pale-Blue": "hsl(225, 100%, 98%)",
-        "light-card": "hsl(227, 47%, 96%)",
+        "light-card-2": "hsl(225, 100%, 98%)",
+        "light-card-1": "hsl(227, 47%, 96%)",
         "light-text-1": "hsl(228, 12%, 44%)",
         "light-text-2": "hsl(230, 17%, 14%)",
+        "light-toggle": "hsl(230, 22%, 74%)",
         //dark theme
         "dark-primary": "hsl(230, 17%, 14%)",
         "dark-secondary": "hsl(232, 19%, 15%)",
@@ -28,12 +29,12 @@ module.exports = {
         attribution: "hsl(228, 45%, 44%)",
       },
       fontFamily: {
-        "inter": "inter"
+        inter: "inter",
       },
       letterSpacing: {
-        "custom": ".3rem"
-      }
-    }
+        custom: ".3rem",
+      },
+    },
   },
   plugins: [],
 };
