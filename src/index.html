@@ -22,20 +22,20 @@
 
   <body class="font-inter text-sm">
     <main class="flex flex-col bg-white">
-      <section class="flex flex-col">
+      <section class="flex flex-col p-6">
         <div class="">
           <h3 class="text-lg font-bold">Social Media Dashboard</h3>
           <h5 class="text-xs text-light-text-2 font-bold">
             Total Followers: 23,004
           </h5>
         </div>
-        <hr class="border-y-light-text-1 mt-5 mb-3 my-auto px-4 rounded" />
-        <div>
+        <hr class="border-light-text-1 mt-5 mb-3 my-auto rounded" />
+        <div class="pt-1">
           <span class="text-light-text-1 font-bold">Dark Mode</span>
           <input type="checkbox" />
         </div>
       </section>
-      <section class="flex flex-col p-6">
+      <section class="flex flex-col p-6 [&>article]:mb-5">
         <article
           class="flex flex-col items-center p-2 bg-light-card-2 border-t-4 border-facebook rounded hover:bg-light-card-1"
         >
@@ -47,23 +47,22 @@
         <article
           class="flex flex-col items-center p-2 bg-light-card-2 border-t-4 border-twitter rounded hover:bg-light-card-1"
         >
-          <div class="flex flex-row items-center px-1">
-            <img
-              class="w-5 h-5"
-              src="../images/icon-twitter.svg"
-              alt="facebook img"
-            />
-            <h6 class="py-4 pl-2 text-light-text-1 font-bold">@nathanf</h6>
-          </div>
+          <h6 class="flex p-4 text-light-text-1 font-bold">
+            <img class="w-5 h-5 mr-2 align-baseline" src="../images/icon-twitter.svg" alt="twitter img" />
+            @nathanf
+          </h6>
           <h2 class="text-6xl tracking-tighter font-bold">1044</h2>
           <p class="text-light-text-1 text-lg tracking-custom">Followers</p>
           <small class="p-4 text-lime-green font-bold">99 Today</small>
         </article>
         <article
-          class="pt-1 bg-gradient-to-r from-instagram-start to-instagram-end rounded hover:bg-light-card-1"
+          class="pt-1 bg-gradient-to-r from-instagram-start to-instagram-end rounded"
         >
-          <div class="flex flex-col items-center h-auto bg-white w-full p-1">
-            <h6 class="p-4 text-light-text-1 font-bold">@realnathanf</h6>
+          <div class="flex flex-col items-center h-full bg-light-card-2 w-full p-1 hover:bg-light-card-1">
+            <h6 class="flex p-4 text-light-text-1 font-bold">
+              <img class="w-5 h-5 mr-2 align-baseline" src="../images/icon-instagram.svg" alt="instagram img"/>
+              @realnathanf
+            </h6>
             <h2 class="text-6xl tracking-tighter font-bold">11k</h2>
             <p class="text-light-text-1 text-lg tracking-custom">Followers</p>
             <small class="p-4 text-lime-green font-bold">1099 Today</small>
@@ -72,10 +71,13 @@
         <article
           class="flex flex-col items-center p-2 bg-light-card-2 border-t-4 border-youTube rounded hover:bg-light-card-1"
         >
-          <h6 class="p-4 text-light-text-1 font-bold">Nathan F.</h6>
+          <h6 class="flex p-4 text-light-text-1 font-bold">
+            <img class="w-5 h-5 mr-2 align-baseline" src="../images/icon-youtube.svg" alt="youtube img"/>
+            Nathan F.
+          </h6>
           <h2 class="text-6xl tracking-tighter font-bold">8239</h2>
           <p class="text-light-text-1 text-lg tracking-custom">Subscribers</p>
-          <small class="p-4 text-lime-green font-bold">144 Today</small>
+          <small class="p-4 text-bright-red font-bold">144 Today</small>
         </article>
       </section>
       <section>
