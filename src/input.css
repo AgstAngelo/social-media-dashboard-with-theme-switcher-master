@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer{
+  .card {
+    @apply flex flex-col items-center p-2 bg-light-card-2 rounded hover:bg-light-card-1;
+  }
+}
