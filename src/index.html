@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link
       rel="icon"
       type="image/png"
@@ -20,31 +19,34 @@
     <title>Desafio Front-End Mentor</title>
   </head>
 
-  <body class="font-inter text-sm">
-    <main class="flex flex-col bg-white">
-      <section class="flex flex-col px-6 py-4">
+  <body class="font-inter">
+    <main class="bg-white grid grid-cols-1 max-w-7xl lg:mx-auto">
+      <section class="px-6 py-4">
         <div class="">
-          <h3 class="text-lg font-bold">Social Media Dashboard</h3>
-          <h5 class="text-xs text-light-text-2 font-bold">
+          <h3 class="text-2xl font-bold">Social Media Dashboard</h3>
+          <h5 class="text-light-text-1 font-bold text-sm">
             Total Followers: 23,004
           </h5>
         </div>
-        <hr class="border-light-text-1 mt-5 mb-3 my-auto rounded" />
+        <hr class="bg-black mt-5 mb-3 my-auto rounded" />
         <div class="flex justify-between">
           <span class="text-light-text-1 font-bold">Dark Mode</span>
           <input type="checkbox" />
         </div>
       </section>
-      <section class="flex flex-col px-6 py-4 [&>article]:mb-5">
+      <section class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 px-6 py-4 justify-items-center [&>article]:max-w-sm [&>article]:w-full">
         <article class="card border-t-4 border-facebook">
-          <h6 class="p-4 text-light-text-1 font-bold">@nathanf</h6>
+          <h6 class="flex p-4 text-light-text-1 font-bold align-bottom">
+            <img class="w-5 h-5 mr-2" src="../images/icon-facebook.svg" alt="twitter img" />
+            <p class="text-end">@nathanf</p>
+          </h6>
           <h2 class="text-6xl tracking-tighter font-bold">1987</h2>
           <p class="text-light-text-1 text-lg tracking-custom">Followers</p>
           <small class="p-4 text-lime-green font-bold">12 Today</small>
         </article>
         <article class="card border-t-4 border-twitter">
           <h6 class="flex p-4 text-light-text-1 font-bold">
-            <img class="w-5 h-5 mr-2 align-baseline" src="../images/icon-twitter.svg" alt="twitter img" />
+            <img class="w-5 h-5 mr-2 ali" src="../images/icon-twitter.svg" alt="twitter img" />
             @nathanf
           </h6>
           <h2 class="text-6xl tracking-tighter font-bold">1044</h2>
@@ -72,57 +74,74 @@
           <small class="p-4 text-bright-red font-bold">144 Today</small>
         </article>
       </section>
-      <section>
-        <h4>Overview - Today</h4>
-      </section>
-      <section>
-        <article>
-          <p>Page Views</p>
-          <div>Icon</div>
-          <h3>87</h3>
-          <small>3%</small>
+      <h4 class="text-light-text-1 font-bold px-6 text-2xl">Overview - Today</h4>
+      <section class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 px-6 py-4 justify-items-center [&>article]:max-w-sm [&>article]:w-full">
+        <article class="card grid grid-cols-2 gap-6 items-center justify-items-center rounded-md [&>*]:w-full">
+          <p class="font-bold text-light-text-1 text-sm pt-4 pl-4">Page Views</p>
+          <div class="flex justify-end pr-4 pt-4">
+            <img class="object-contain" src="../images/icon-facebook.svg" alt="facebook_icon">
+          </div>
+          <h3 class="text-3xl font-bold pb-4 pl-4">87</h3>
+          <small class="flex text-lime-green font-bold text-xs justify-end p-4">
+            <img class="object-contain pr-1" src="../images/icon-up.svg" alt="">
+            3%
+          </small>
         </article>
-        <article>
-          <p>Likes</p>
-          <div>Icon</div>
-          <h3>52</h3>
-          <small>2%</small>
+        <article class="card grid grid-cols-2 gap-6 items-center justify-items-center rounded-md [&>*]:w-full">
+          <p class="font-bold text-light-text-1 text-sm pt-4 pl-4">Likes</p>
+          <div class="flex justify-end pr-4 pt-4">
+            <img class="object-contain" src="../images/icon-facebook.svg" alt="facebook_icon">
+          </div>
+          <h3 class="text-3xl font-bold pb-4 pl-4">52</h3>
+          <small class="flex text-bright-red font-bold text-xs justify-end p-4"><img class="object-contain pr-1" src="../images/icon-down.svg" alt="">2%</small>
         </article>
-        <article>
-          <p>Likes</p>
-          <div>Icon</div>
-          <h3>5462</h3>
-          <small>2257%</small>
+        <article class="card grid grid-cols-2 gap-6 items-center justify-items-center rounded-md [&>*]:w-full">
+          <p class="font-bold text-light-text-1 text-sm pt-4 pl-4">Likes</p>
+          <div class="flex justify-end pr-4 pt-4">
+            <img class="object-contain" src="../images/icon-instagram.svg" alt="facebook_icon">
+          </div>
+          <h3 class="text-3xl font-bold pb-4 pl-4">5462</h3>
+          <small class="flex text-lime-green font-bold text-xs justify-end p-4"><img class="object-contain pr-1" src="../images/icon-up.svg" alt="">2257%</small>
         </article>
-        <article>
-          <p>Profile Views</p>
-          <div>Icon</div>
-          <h3>52k</h3>
-          <small>1375%</small>
+        <article class="card grid grid-cols-2 gap-6 items-center justify-items-center rounded-md [&>*]:w-full">
+          <p class="font-bold text-light-text-1 text-sm pt-4 pl-4">Profile Views</p>
+          <div class="flex justify-end pr-4 pt-4">
+            <img class="object-contain" src="../images/icon-instagram.svg" alt="facebook_icon">
+          </div>
+          <h3 class="text-3xl font-bold pb-4 pl-4">52k</h3>
+          <small class="flex text-lime-green font-bold text-xs justify-end p-4"><img class="object-contain pr-1" src="../images/icon-up.svg" alt="">1375%</small>
         </article>
-        <article>
-          <p>Retweets</p>
-          <div>Icon</div>
-          <h3>117</h3>
-          <small>303%</small>
+        <article class="card grid grid-cols-2 gap-6 items-center justify-items-center rounded-md [&>*]:w-full">
+          <p class="font-bold text-light-text-1 text-sm pt-4 pl-4">Retweets</p>
+          <div class="flex justify-end pr-4 pt-4">
+            <img class="object-contain" src="../images/icon-twitter.svg" alt="facebook_icon">
+          </div>
+          <h3 class="text-3xl font-bold pb-4 pl-4">117</h3>
+          <small class="flex text-lime-green font-bold text-xs justify-end p-4"><img class="object-contain pr-1" src="../images/icon-up.svg" alt="">303%</small>
         </article>
-        <article>
-          <p>Likes</p>
-          <div>Icon</div>
-          <h3>507</h3>
-          <small>553%</small>
+        <article class="card grid grid-cols-2 gap-6 items-center justify-items-center rounded-md [&>*]:w-full">
+          <p class="font-bold text-light-text-1 text-sm pt-4 pl-4">Likes</p>
+          <div class="flex justify-end pr-4 pt-4">
+            <img class="object-contain" src="../images/icon-twitter.svg" alt="facebook_icon">
+          </div>
+          <h3 class="text-3xl font-bold pb-4 pl-4">507</h3>
+          <small class="flex text-lime-green font-bold text-xs justify-end p-4"><img class="object-contain pr-1" src="../images/icon-up.svg" alt="">553%</small>
         </article>
-        <article>
-          <p>Likes</p>
-          <div>Icon</div>
-          <h3>107</h3>
-          <small>19%</small>
+        <article class="card grid grid-cols-2 gap-6 items-center justify-items-center rounded-md [&>*]:w-full">
+          <p class="font-bold text-light-text-1 text-sm pt-4 pl-4">Likes</p>
+          <div class="flex justify-end pr-4 pt-4">
+            <img class="object-contain" src="../images/icon-youtube.svg" alt="facebook_icon">
+          </div>
+          <h3 class="text-3xl font-bold pb-4 pl-4">107</h3>
+          <small class="flex text-bright-red font-bold text-xs justify-end p-4"><img class="object-contain pr-1" src="../images/icon-down.svg" alt="">19%</small>
         </article>
-        <article>
-          <p>Total Views</p>
-          <div>Icon</div>
-          <h3>1407</h3>
-          <small>12%</small>
+        <article class="card grid grid-cols-2 gap-6 items-center justify-items-center rounded-md [&>*]:w-full">
+          <p class="font-bold text-light-text-1 text-sm pt-4 pl-4">Total Views</p>
+          <div class="flex justify-end pr-4 pt-4">
+            <img class="object-contain" src="../images/icon-youtube.svg" alt="facebook_icon">
+          </div>
+          <h3 class="text-2xl font-bold pb-4 pl-4">1407</h3>
+          <small class="flex text-bright-red font-bold text-xs justify-end p-4"><img class="object-contain pr-1" src="../images/icon-down.svg" alt="">12%</small>
         </article>
       </section>
     </main>
